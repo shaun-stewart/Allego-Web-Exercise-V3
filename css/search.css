@@ -1,0 +1,37 @@
+.searchContainer {
+    display: grid;
+    grid-template-columns:1.5rem 4fr 1fr;
+    width:300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-container:focus-within i {
+    display: none;
+  }
+  
+  .search-container:focus-within .search-box{
+    grid-column:1/4;
+  }
+  
+  .search-container:focus-within .search-box::placeholder {
+    color:transparent;
+  }
+  
+  .search-icon {
+    padding: 0.5rem;
+    grid-row:1;
+    grid-column:1/2;
+    z-index:2
+  }
+  
+  .search-box {
+    border: 0;
+    padding: 0.5rem;
+    grid-column:2/4;
+    grid-row:1;
+    outline:none;
+  }
+  
+  
